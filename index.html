@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+ </head>
+ <body>
+  <div class="container">
+   <div class="header">
+    <div class="nav" id="nav">
+     <ul>
+      <li><a href="">Home</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Facebook</a>
+       <ul>
+        <li><a href="#">Oridian Saliaj</a></li>
+        <li class="bs"><a href="#">Gerald Monka</a></li>
+       </ul>
+      </li>
+      <li><a href="#">Instagram</a>
+        <ul>
+         <li><a href="#">oridian_saliaj</a></li>
+         <li class="bs"><a href="#">geri.monka</a></li>
+        </ul>
+       </li>
+       <li class="rl"><a href="#">Get in touch!</a><li>
+     </ul>
+    </div>
+    <div class="hi">
+     <h3>Oridian & Gerald</h3>
+    <h4>Music Besties</h4>
+    </div>
+   </div>
+   <div class="about">
+    <h2>About us</h2>
+    <hr>
+    <p>We like to sing and we like to hear songs. We are high school student <br>
+and we made this website because we had to,it was requested by school. <br>
+The music we hear is mostly native but we do hear international music <br>
+as well. We don't like to give out information about our likings so we <br>
+won't say anything here. We have alawys loved music and we alaways will <br>
+love it. This website as said was made for school purposes. We made it  <br>
+using html and css. Allthe information needed can be found at it's official
+website.</p>
+    <div class="oridian">
+     <h5 class="oridian">Oridian</h5>
+     <img src="images/oridian.jpg" class="oridian">
+    </div>
+    <div class="gerald">
+     <h5 class="gerald">Gerald</h5>
+     <img src="images/gerald.jpg" class="gerald">
+    </div>
+   </div>
+   <div class="contact">
+    <h1>Contact us</h1>
+    <p>If you want to send a message<br>
+       Just fill in the boxes with all<br>
+       the required information</p>
+    <form name="contactForm" onsubmit="return validateForm()" method="post">
+     <input type="text" value="Name" class="name" id="name" autocomplete="off"
+     name ="fn1">
+     <input type="text" value="Email" class="email" id="email" name="fn2"
+     autocomplete="off"><br>
+     <input type="text" value="Message" class="message" id="message" name="fn3"
+     autocomplete="off"><br>
+     <input type="submit" class="send" value="Send" autocomplete="off">
+    </form>
+   </div>
+   <div class="copyright">
+    <h6>Copyright © 2018 Oridian & Gerald</h6>
+   </div>
+  </div>
+ <script>
+  function validateForm() {
+    var nm nm = document.forms["myForm"]["fn1"].value;
+    var nm em = document.forms["myForm"]["fn2"].value;
+    var nm ms = document.forms["myForm"]["fn3"].value;
+    if (nm == "") || (em == "") || (ms == "") {
+        alert("All boxes must be filled out!");
+    }
+    else {
+ 	      alert("Thank you for your message!")
+    }
+   }
+  }
+ </script>
+ </body>
+</html>
